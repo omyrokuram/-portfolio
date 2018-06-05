@@ -1,0 +1,57 @@
+@charset"utf-8";
+
+body	{
+	background-color:#fff;
+
+
+}
+
+
+
+wrapper	{
+	width:100%;
+	/*width:800px; */
+	background-color:blue;
+	margin:0 auto;
+}
+
+header	{
+	width:100%;
+	margin:0 auto;
+	display:-webkit-flex;
+	position: relative;
+}
+
+header img{
+	width:20%;
+	height:20%;
+} 
+
+header h1	{
+	width: 100%; 
+	text-align:center;
+	font-weight:125%;
+	font-size:4em;
+	font-style:italic;
+	position: absolute;
+	top:50%;
+	left:0; 
+	color:red;
+/*	background-color:#ffa500;*/
+}
+
+footer	{
+	width:100%;
+/*	background-color:red;*/
+	line-height:2em;
+	margin:0 auto;
+}
+
+footer p	{
+	text-align:center;
+	font-size:0.7em;
+	margin:0 auto;
+}	
+
+
+/*-------�������炪Responsive BreakPoint----------*/

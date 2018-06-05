@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!------fancybox------->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/fancybase.js"></script>
+<!------fancybox----->
+
+<!--------ページ間の移動-------->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 1500; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+<!-----ページ間の移動-------->
+
+<title>portfolio_graphic</title>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<div id="portfolio">
+<img src="img/portfolio_title.png" alt="portfolio">
+</div>
+
+
+</header>
+<div id="navbox">
+	<div id="navimg">
+<a href="../index.html"><img src = "img/nav_top.png"  alt = "topのナビ"></a>
+	</div>
+	<div id="navimg">
+<a href="../web/web.html"><img src = "img/nav_web.png"  alt = "webのナビ"></a>
+	</div>
+
+</div>
+
+<main>
+<div id="logo">
+<img src = "img/graphic_title2.png"  alt = "">
+</div>
+<!--<h2>graphic</h2>--->
+
+
+<article>
+	<section>
+	<h3>浮世絵</h3>
+		<div id="box">
+			
+			<div id="img">
+				<a class="fancybox" href="img/ukiyoe.png" alt = "浮世絵"><img src = "img/ukiyoe.png" alt = "浮世絵"></a>
+			</div>
+			<div id="img">
+				<a class="fancybox" href="img/ukiyoe2.jpg" alt = "浮世絵のモックアップ"><img src = "img/ukiyoe2.jpg" alt = "浮世絵のモックアップ"></a>
+			</div>
+		</div>
+		<div id="comment">
+		<ul class="comment">
+	<li><span>コンセプト</span>:ペンツールを利用してのイラストのトレース</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール・はさみツール</li><li>【Photoshop】自由変形ツール・色調補正トーンカーブ</li>
+	<li><span>制作時間</span>:作業時間&nbsp;15時間&nbsp;&nbsp;構想時間&nbsp;0時間&nbsp;&nbsp;作業時間&nbsp;15時間</li>
+	<li><span>コメント</span>:右手と左手の組み方で、最初はレイヤーの順序が上手く出来ない時もありましたが、はさみツールで指を部分的に分けてから再度レイヤー分けをして順序を変更して仕上げました。</li>
+</ul>
+		</div>
+	</section>
+</article>	
+
+<article>	
+	<section>
+	<h3>鳥取の地酒</h3>
+		<div id="box">
+			
+			<div id="img">
+				<a class="fancybox" href="img/tottori.jpg" alt = "鳥取"><img src = "img/tottori.jpg" alt = "鳥取"></a>
+			</div>
+			<div id="img">
+				<a class="fancybox" href="img/menu.jpg" alt = "鳥取のモックアップ"><img src = "img/menu.jpg" alt = "鳥取のモックアップ"></a>
+			</div>
+		</div>
+		<div id="comment">
+		<ul class="comment">
+	<li><span>コンセプト</span>:広大な鳥取砂丘・砂丘に居るラクダや、日本地図で位置を確認してもらい、お酒を楽しみながら鳥取に興味を持って頂く。</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール・テキストツール・3Dツール</li><li>【Photoshop】自由変形ツール・色調補正トーンカーブ</li>
+	<li><span>ターゲット層</span>:5歳～15歳位のお子様がいるファミリー層の30代?40代の男女</li>
+	<li><span>製作時間</span>:7時間&nbsp;&nbsp;構想時間&nbsp;1時間&nbsp;&nbsp;作業時間&nbsp;6時間</li>
+	<li><span>コメント</span>:旅先で、帰宅後に思い出話をしながら、行く前にと想像しながらと様々な状況で美味しく呑んでもらいたいです。</li>
+</ul>
+		</div>
+	</section>
+</article>
+
+<article>
+	<section>
+	<h3>虎のカップ</h3>
+		<div id="box">
+			
+			<div id="img">
+				<a class="fancybox" href="img/tiger.jpg"alt = "虎"><img src = "img/tiger.jpg"alt = "虎"></a>
+			</div>
+			<div id="img">
+				<a class="fancybox" href="img/coffee-mug-mockup-tiger.jpg" alt = "虎のマグカップのモックアップ"><img src = "img/coffee-mug-mockup-tiger.jpg" alt = "虎のマグカップのモックアップ"></a>
+			</div>
+		</div>
+		<div id="comment">
+			<ul class="comment">
+	<li><span>コンセプト</span>:ブラシツールを利用してのイラストのトレース</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール・ブラシツール</li><li>【Photoshop】自由変形ツール・色調補正トーンカーブ</li>
+	<li><span>制作時間</span>:5時間&nbsp;&nbsp;作業時間&nbsp;5時間</li>
+	<li><span>コメント</span>:毛並みを表現する為にブラシツールを使って少しずつ色を重ねることを意識しました。
+</li>
+</ul>
+		</div>
+	</section>
+</article>	
+
+<article>	
+	<section>
+	<h3>「猫のえさやりマナーについて」</h3>
+		<div id="box">
+			
+			<div id="img">
+				<a class="fancybox" href="img/cat.jpg" alt = "猫の餌やりポスター"><img src = "img/cat.jpg" alt = "猫の餌やりポスター"></a>
+			</div>
+			<div id="img">
+				<a class="fancybox" href="img/cat_poster.jpg"  alt = "猫のポスターのモックアップ"><img src = "img/cat_poster.jpg"  alt = "猫のポスターのモックアップ"></a>
+			</div>
+		</div>
+		<div id="comment">
+		<ul class="comment">
+	<li><span>コンセプト</span>:公募ポスター「猫のえさやりマナーについて」</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール・自由変形ツール・グラデーションツール・テキストツール</li><li>【Photoshop】自由変形ツール・色調補正トーンカーブ</li>
+	<li><span>制作時間</span>:180時間&nbsp;&nbsp;構想時間&nbsp;3時間&nbsp;&nbsp;作業時間&nbsp;177時間</li>
+	<li><span>コメント</span>:生徒達の身体や机や椅子を全て半透明にして上書き保存をしてしまっていたので、データのバックアップの必要性を学びました。</li>
+</ul>
+		</div>
+	</section>
+</article>
+
+<article>
+	<section>
+	<h3>「交通安全ポスター」</h3>
+		<div id="box">
+			
+			<div id="img">
+				<a class="fancybox" href="img/drivingposter.jpg" alt = "交通安全"><img src = "img/drivingposter.jpg" alt = "交通安全"></a>
+			</div>
+			<div id="img">
+				<a class="fancybox" href="img/car_poster2.jpg" alt = "交通安全のモックアップ"><img src = "img/car_poster2.jpg" alt = "交通安全のモックアップ"></a>
+			</div>
+		</div>
+		<div id="comment">
+			<ul class="comment">
+	<li><span>コンセプト</span>:公募デザイン「交通安全ポスター」</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール・クリッピングマスク・テキストツール</li><li>【Photoshop】自由変形ツール・色調補正トーンカーブ</li>
+	<li><span>制作時間</span>:11時間&nbsp;&nbsp;構想時間&nbsp;1時間&nbsp;&nbsp;作業時間&nbsp;11時間</li>
+	<li><span>コメント</span>:ポスターを見た人が、少しでも交通安全に意識を向けてもらえるように心掛けて作りました。
+</li>
+</ul>
+		</div>
+	</section>
+</article>	
+
+<article>		
+	<section>
+	<h3>動物のサラリーマン</h3>
+		<div id="box">
+			<div id="img">
+				<a class="fancybox" href="img/salaryman.jpg" alt = "サラリーマン"><img src = "img/salaryman.jpg" alt = "サラリーマン"></a>
+			</div>
+		</div>
+		<div id="comment">
+		<ul class="comment">
+	<li><span>コンセプト</span>:社会人基礎力である「前に踏み出す力」・「考え抜く力」・「チームで働く力」を動物で表現してみたいと思い合成しました。</li>
+	<li><span>使用アプリ</span>:<br>【illustrator】ペンツール</li><li>【Photoshop】クイック選択ツール・レイヤーマスク・選択とマスク・境界線調整ブラシツール・自由変形ツール・トーンカーブ・色相彩度</li>
+	<li><span>制作時間</span>:20時間&nbsp;&nbsp;構想時間&nbsp;4時間&nbsp;&nbsp;作業時間&nbsp;16時間</li>
+	<li><span>コメント</span>:レイヤー管理が複雑でしたが、作業中にレイヤーグループの使い方が分かり良い勉強になりました。</li>
+</ul>
+		</div>
+	</section>
+</article>
+
+
+
+<a class="button" href="#portfolio">▲ 目次に戻る</a>
+
+<br><br><br><br>
+</div><!--------ここまでがwrapper-------->
+</body>
+</html>
+
